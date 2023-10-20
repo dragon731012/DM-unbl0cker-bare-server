@@ -1,3 +1,4 @@
 type: web
-name: bare-server
+name: my blog
 runtime: node
+buildCommand: yarn build
