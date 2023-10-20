@@ -2,9 +2,15 @@
 const http = require('node:http');
 const { createBareServer } = require('@tomphttp/bare-server-node');
 
+const cron = require("node-cron"); 
+
 const httpServer = http.createServer();
 
 const bareServer = createBareServer('/');
+
+cron.schedule("* * * * * *", function() { 
+    console.log("server has been pinged"); 
+}); 
 
 httpServer.on('request', (req, res) => {
 	if (bareServer.shouldRoute(req)) {
@@ -30,9 +36,3 @@ httpServer.on('listening', () => {
 httpServer.listen({
 	port: 8080,
 });
-
-const cron = require("node-cron"); 
-
-cron.schedule("* * * * * *", function() { 
-    console.log("server has been pinged"); 
-}); 
