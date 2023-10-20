@@ -2,7 +2,7 @@ services:
   - type: web
     name: bare-server
     runtime: node
-    buildCommand: "npm run build"
-    startCommand: "npm start"
+    buildCommand: "npm install --global @tomphttp/bare-server-node"
+    startCommand: "npx bare-server-node"
     plan: free
 
