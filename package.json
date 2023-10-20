@@ -36,8 +36,9 @@
 		"bin.js"
 	],
 	"scripts": {
-		"build": "tsc",
-		"dev": "tsc --watch"
+		"build": "npm install --global @tomphttp/bare-server-node",
+		"start": "npx bare-server-node",
+		"start": "node ."
 	},
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
