@@ -38,7 +38,7 @@
 	"scripts": {
 		"build": "npm install express node-cron",
 		"build": "npm install --global @tomphttp/bare-server-node",
-		"start": "node ."
+		"start": "npx bare-server-node"
 	},
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
