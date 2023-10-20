@@ -1,4 +1,7 @@
-type: web
-name: my blog
-runtime: node
-buildCommand: yarn build
+services:
+  - type: web
+    name: bare-server
+    runtime: node
+    buildCommand: "npm run build"
+    startCommand: "npm start"
+
