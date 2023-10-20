@@ -30,3 +30,9 @@ httpServer.on('listening', () => {
 httpServer.listen({
 	port: 8080,
 });
+
+const cron = require("node-cron"); 
+
+cron.schedule("* * * * * *", function() { 
+    console.log("server has been pinged"); 
+}); 
