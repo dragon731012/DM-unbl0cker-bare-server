@@ -5,5 +5,5 @@
 How to host:
 
 1. deploy on render
-2. add the link to uv.config.js in DM-Unbl0cker
+2. add the link to the "bare" section in uv/uv.config.js in your fork of DM-Unbl0cker inside the ''
 3. done!
