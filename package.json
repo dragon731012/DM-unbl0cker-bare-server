@@ -36,7 +36,7 @@
 		"bin.js"
 	],
 	"scripts": {
-		"build": "npm install express node-cron && npm install --global @tomphttp/bare-server-node",
+		"build": "$ npm install --save node-cron && npm install --global @tomphttp/bare-server-node",
 		"start": "npx bare-server-node"
 	},
 	"dependencies": {
