@@ -8,7 +8,7 @@ const httpServer = http.createServer();
 
 const bareServer = createBareServer('/');
 
-cron.schedule("* * * * * *", function() { 
+cron.schedule("*/25 * * * *", function() { 
     console.log("server has been pinged"); 
 }); 
 
