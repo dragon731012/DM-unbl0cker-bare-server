@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "devCommand": "node index.js",
   "builds": [{
       "src": "index.js",
