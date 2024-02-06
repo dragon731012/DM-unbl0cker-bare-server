@@ -37,7 +37,7 @@
 	],
 	"scripts": {
 		"build": "npm install --save node-cron && npm install --global @tomphttp/bare-server-node",
-=		"start": "npx bare-server-node"
+		"start": "npx bare-server-node"
 	},
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
